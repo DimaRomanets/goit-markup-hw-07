@@ -18,6 +18,7 @@
     />
 
     <title>Main Page</Main></title>
+    
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -26,7 +27,7 @@
       <div class="container header-container">
         <nav class="top-navigation">
           <!-- Логотип -->
-          <a class="logo-link-header link" href="./index.html">
+          <a class="logo-link-header padding-header link" href="./index.html">
             Web<span class="logo-header-studio">Studio</span></a
           >
           <!-- Навігація на інші сторінки -->
@@ -60,6 +61,112 @@
             </li>
           </ul>
         </address>
+
+<!-- MOBILE MENU -->
+
+        <button type="button" class="button-mobile js-open-menu " aria-expanded="false">
+          <svg 
+          class="button-mobile-svg" 
+          width="32"
+          height="32"
+           >
+           <use href="./images/icons.svg#icon-mobile-menu"></use>
+        
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav class="top-navigation-mobile">
+          <ul class="menu-mobile list">
+            <li class="menu-mobile-item">
+              <a class="menu-mobile-link link current-mobile" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-mobile-item">
+              <a class="menu-mobile-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+
+            <li class="menu-mobile-item">
+              <a class="menu-mobile-link current-mobile link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+          <address class="contact-mobile">
+            <ul class="contact-menu-mobile list">
+              
+               <!-- Посилання на телефонний номер -->
+               <li class="contact-menu-item-mobile">
+                <a class="menu-mobile-link link " href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <!-- Посилання на адресу електронної пошти  -->
+              <li class="contact-menu-item-mobile">
+                <a class="contact-menu-link-mobile link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="media-mobile">
+          <ul class="media-list-mobile">
+            <li class="social-list-item-mobile list">
+              <a href="" class="media-list-link-mobile">
+                <svg
+                  class="media-list-icon-mobile"
+                  aria-label="icon Instagram"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item-mobile list">
+              <a href="" class="media-list-link-mobile">
+                <svg
+                  class="media-list-icon"
+                  aria-label="icon twitter"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item-mobile list">
+              <a href="" class="media-list-link-mobile">
+                <svg
+                  class="media-list-icon"
+                  aria-label="icon facebook"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item-mobile list">
+              <a href="" class="media-list-link-mobile">
+                <svg
+                  class="media-list-icon"
+                  aria-label="icon linkedin"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        </div>
       </div>
     </header>
     <!-- Унікальний контент сторінки -->
@@ -82,7 +189,7 @@
 
       <section class="section-information section">
         <div class="container container-section-information">
-          <h2 class="information-title visually-hidden">Information</h2>
+          <h2 class="information-title visually-hidden">Information</h2> 
           <!-- Перший абзац -->
           <ul class="information-items list">
             <li class="information-item">
@@ -120,10 +227,10 @@
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
-            </li>
+            </li> 
 
             <!-- Третій абзац -->
-            <li class="information-item">
+             <li class="information-item">
               <div class="container-information-icon">
                 <svg
                   class="information-list-icon"
@@ -142,7 +249,7 @@
             </li>
 
             <!-- Четвертий абзац -->
-            <li class="information-item">
+             <li class="information-item">
               <div class="container-information-icon">
                 <svg
                   class="information-list-icon"
@@ -172,6 +279,7 @@
             <li class="work-item">
               <img
                 class="work-img"
+                srcset="./images/img1@2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="computer monitor"
                 width="360"
@@ -180,6 +288,7 @@
             <li class="work-item">
               <img
                 class="work-img"
+                srcset="./images/img2@2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="phone"
                 width="360"
@@ -188,6 +297,7 @@
             <li class="work-item">
               <img
                 class="work-img"
+                srcset="./images/img3@2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="phone and computer"
                 width="360"
@@ -199,13 +309,14 @@
 
       <!-- Секція 3 -->
 
-      <section class="section-team section">
+       <section class="section-team section">
         <div class="container container-section-team">
           <h2 class="section-team-title">Our Team</h2>
           <ul class="section-team-list list">
             <li class="section-team-item">
               <img
                 class="section-team-img"
+                srcset="./images/mark_guerrero@2x.jpg 2x"
                 src="./images/mark_guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -215,7 +326,7 @@
                 <p class="section-team-text">Product Designer</p>
                 <ul class="social-list">
                   <li class="social-list-item list">
-                    <a href="" class="social-list-link">
+                    <a href="" class="social-list-link"> 
                       <svg
                         class="social-list-icon"
                         width="16"
@@ -268,6 +379,7 @@
             <li class="section-team-item">
               <img
                 class="section-team-img"
+                srcset="./images/tom_ford@2x.jpg 2x"
                 src="./images/tom_ford.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -330,6 +442,7 @@
             <li class="section-team-item">
               <img
                 class="section-team-img"
+                srcset="./images/camila_garcia@2x.jpg 2x"
                 src="./images/camila_garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -392,6 +505,7 @@
             <li class="section-team-item">
               <img
                 class="section-team-img"
+                srcset="./images/daniel_wilson@2x.jpg 2x"
                 src="./images/daniel_wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -453,7 +567,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
 
       <!-- Секція 4 -->
 
@@ -539,7 +653,7 @@
     </main>
 
     <!-- Підвал сторінки -->
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="container container-two-footer">
         <div class="container-footer">
           <a class="logo-link-footer link" href="./index.html">
@@ -630,11 +744,11 @@
             </button>
           </form>
         </div>
-      </div>
+      </div> -->
     </footer>
 
     <!-- Модальне вікно -->
-
+    
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -753,6 +867,14 @@
       </div>
     </div>
 
+  
+<script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
